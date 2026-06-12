@@ -2,7 +2,7 @@
 // All API calls go through here. The "proxy" in package.json
 // forwards /api/* → http://localhost:5000 automatically.
 
-const BASE = '/api';
+const BASE = 'https://task-ask5.onrender.com/api';
 
 async function request(url, options = {}) {
   const res = await fetch(`${BASE}${url}`, {
